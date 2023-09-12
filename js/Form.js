@@ -25,9 +25,39 @@ class Form {
     this.playButton.hide();
     this.input.hide();
   }
+handleMousePressed() {
 
+this.playButton.mousePressed(() => {
+
+this.input.hide();
+
+
+
+this.playButton.hide();
+
+
+
+var mensagem = `
+
+
+
+olá, ${this.input.value()}
+
+
+
+</br>espere o outro jogador entrar...";
+
+
+
+this.greeting.html (mensagem);
+
+
+
+});
+}
   display() {
     this.setElementsPosition();
     this.setElementsStyle();
+    this.handleMousePressed();
   }
 }
